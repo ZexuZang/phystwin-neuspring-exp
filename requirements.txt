@@ -1,0 +1,54 @@
+# PhysTwin / NeuSpring experiment requirements
+# Generated from requirements_colab.txt screenshot and PhysTwin_regionwise_optimization_(NO pruning)_colab.ipynb.
+#
+# IMPORTANT:
+# Install PyTorch / torchvision separately according to your server CUDA version.
+# Example for CUDA 12.1:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+# CUDA extension packages simple-knn and diff-gaussian-rasterization are local submodules.
+# Install them after this file, for example:
+#   pip install -v --no-build-isolation ./gaussian_splatting/submodules/simple-knn
+#   pip install -v --no-build-isolation ./gaussian_splatting/submodules/diff-gaussian-rasterization
+
+numpy==1.26.4
+pandas
+scipy
+scikit-learn
+scikit-image
+matplotlib
+pillow<12
+imageio
+imageio-ffmpeg
+opencv-python-headless==4.10.0.84
+tabulate
+
+tqdm
+joblib
+rich
+termcolor
+jaxtyping
+
+trimesh
+rtree
+pyrender
+pyglet<2
+PyOpenGL
+PyOpenGL_accelerate
+open3d
+
+cma
+kornia
+lpips
+plyfile
+
+warp-lang
+gsplat
+wandb
+moviepy
+fvcore
+
+ninja
+cmake
+wheel
+setuptools
